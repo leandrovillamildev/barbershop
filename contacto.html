@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/reset.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <!--=============== WHATSAPP BUTTON ===============-->
+      <a href="https://wa.me/573225061931" class="float" target="_blank">
+         <i class="fa fa-whatsapp my-float"></i>
+      </a>
+
+      <title>Contacto - Barbería Alura</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a class="nav__logo">
+               <img src="assets/imagenes/logo.png" alt="Logo" class="logo__image" />
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Home</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="servicios.html" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Servicios</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="contacto.html" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Contacto</span>
+                     </a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+
+               <div class="nav__social">
+                  <a href="https://github.com/leandrovillamildev" target="_blank" class="nav__social-link">
+                     <i class="ri-github-line"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/leandro-villamil/" target="_blank" class="nav__social-link">
+                     <i class="ri-linkedin-box-line"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main>
+      <h1 class="titulo-principal titulo-principal-contactanos">Contáctanos</h1>
+      <p class="form-información">Si quieres enviarnos una pregunta o queja y si es el caso programar una cita, llena el siguiente formulario. Si quieres programar una cita, en el apartado de mensaje dinos que día y a que hora vas a programarla y con gusto te atenderemos.<br><br>
+      También puedes comunicarte con nosotros dando click en el botón flotante de WhatsApp y manda tu información como se requiere en el formulario.
+      </p><br><br>
+        <section id="contacto" class="contact__form">
+            <form id="form">
+                <label for="nombre"></label>
+                <center><input type="text" id="nombre" class="input-padron" name="nombre" required placeholder="Nombre"></center>
+                <label for="apellido"></label>
+                <center><input type="text" id="apellido" class="input-padron" name="apellido" required placeholder="Apellido"></center>
+                <label for="correoelectronico"></label>
+                <center><input type="email" id="email" class="input-padron" name="email" required placeholder="Email"></center>
+                <label for="telefono"></label>
+                <center><input type="tel" id="telefono" class="input-padron" name="telefono" required placeholder="Teléfono"></center>
+                <label for="mensaje"></label>
+                <center><textarea cols="50" rows="10" id="mensaje" class="input-padron" name="mensaje" required placeholder="Mensaje"></textarea></center><br>
+                <input class="boton__form" type="submit" id="button" value="ENVIAR">
+                </form>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+                <script type="text/javascript">
+                    emailjs.init('AvkACBnSVPmlCBwpQ')
+                </script>
+                
+        </section><br><br><br><br>
+      </main>
+      
+      <!--==================== FOOTER ====================-->
+      <footer>
+         <img class="logo-footer" src="assets/imagenes/logo-blanco.png">
+         <p class="copyright">&copy Copyright The barber - 2024</p>
+      </footer>
+
+       <!--=============== MAIN JS ===============-->
+     <script src="assets/js/main.js"></script>
+   </body>
+</html>
